@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>12 Razones para amarte ❤️</title>
+<style>
+  :root{
+    --bg:#0e1a2b; --bg2:#06101d; --viewer-bg:#0b1320;
+    --accent:#ff6f91; --paper:#ffe9ef; --ink:#1f2430; --gold:#f4d06f;
+    --shadow:0 10px 30px rgba(0,0,0,.35);
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0; font-family:"Futura Std",Futura,"Avenir Next",Arial,ui-sans-serif,system-ui,sans-serif;
+    color:#fff;
+    background: radial-gradient(1200px 800px at 70% -200px,#1a2f4a 0%, var(--bg) 40%, var(--bg2) 100%) fixed;
+    display:grid; place-items:center; padding:18px;
+  }
+
+  .wrap{ width:min(100%, 720px) }
+  .header{
+    padding:18px 18px 26px; border-radius:18px 18px 10px 10px;
+    background:linear-gradient(135deg,#0d2a45 0%,#0a2035 100%);
+    box-shadow:var(--shadow);
+  }
+  .top-meta{ display:flex; justify-content:space-between; font-size:.8rem; opacity:.9 }
+  .title{ text-align:center; margin:8px 0 12px; line-height:1.1 }
+  .title .big{ display:block; font-size:clamp(42px,10vw,78px); font-weight:800; text-shadow:0 2px 0 #0008 }
+  .title .script{ display:block; font-size:clamp(30px,8vw,54px); font-weight:800; color:#f46f91 }
+  .subtitle{ text-align:center; font-style:italic; opacity:.95; margin-bottom:12px; }
+  .slot{
+    height:36px; margin-top:8px; border-radius:9px;
+    background:
+      linear-gradient(#0009, #0000 12px),
+      radial-gradient(12px 12px at 12px 18px, #0006, #0000 70%),
+      radial-gradient(12px 12px at calc(100% - 12px) 18px, #0006, #0000 70%),
+      linear-gradient(#c5ccd7,#a9b4c3);
+    box-shadow: inset 0 4px 10px rgba(0,0,0,.35), 0 6px 18px rgba(0,0,0,.35);
+  }
+
+  .printer{
+    background: var(--viewer-bg);
+    padding:10px 10px 18px; border-radius:0 0 14px 14px; box-shadow:var(--shadow);
+  }
+  .tickets-view{
+    position:relative;
+    min-height:16px;
+    height:auto;
+    overflow:visible;
+  }
+
+  .actions{ display:flex; justify-content:center; margin-top:14px }
+  .btn{
+    padding:10px 14px; border:none; border-radius:10px; font-weight:700;
+    background:linear-gradient(180deg,var(--accent),#ff567f); color:#fff;
+    cursor:pointer; box-shadow:0 6px 16px rgba(255,105,145,.35);
+  }
+  .info{ text-align:center; margin-top:8px; font-size:.9rem; opacity:.9 }
+
+  /* Ticket */
+  .ticket{
+    width:min(560px,calc(100% - 24px));
+    margin:20px auto 0;
+    color:var(--ink);
+    background:var(--paper);
+    box-shadow:0 14px 28px rgba(0,0,0,.35);
+    will-change:transform,opacity;
+    position:relative;
+    border-radius:4px;
+    opacity:0; transform:translateY(-40px);
+  }
+  .ticket::before,
+  .ticket::after{
+    content:"";
+    position:absolute; left:0; right:0; height:22px; pointer-events:none;
+    background:
+      radial-gradient(10px 10px at 10px 11px, var(--viewer-bg) 10px, transparent 10.1px)
+      left top / 20px 22px repeat-x;
+  }
+  .ticket::before{ top:-11px; }
+  .ticket::after{ bottom:-11px; transform: scaleY(-1); }
+
+  .ticket-body{ padding:18px }
+  .mark{ display:flex; justify-content:space-between; font-weight:800; margin-bottom:6px; color:#8b4b60 }
+  .hr{ border:0; height:1px; background:repeating-linear-gradient(90deg,#c8a3af 0 8px,#0000 8px 14px); margin:8px 0 12px }
+  .reason-badge{ display:inline-flex; gap:8px; align-items:center; font-weight:800; padding:6px 10px; border-radius:999px;
+                 background:linear-gradient(180deg,#ffd2df,#ffc1d3); border:2px dashed #ff7ea3 }
+  .reason-badge .num{ width:28px; height:28px; display:grid; place-items:center; border-radius:999px; color:#fff;
+                      background:linear-gradient(180deg,#ff6f91,#ff4e7b) }
+  .reason-text{ margin:12px 0; font-size:1.05rem; text-align: center; }
+  .table{ display:grid; grid-template-columns:1fr auto; gap:6px 12px; font-size:.85rem;
+          background:linear-gradient(180deg,#ffeef3,#ffe2ec); border:1px solid #ffd3e0; border-radius:8px; padding:10px 12px }
+  .barcode{ margin-top:10px; height:44px; background:repeating-linear-gradient(90deg,#000 0 2px,#0000 2px 4px,#000 4px 6px,#0000 6px 9px) }
+  .foot{ margin-top:6px; font-size:.72rem; text-align:center; color:#7a4153 }
+
+  .printing{ animation:appear .55s cubic-bezier(.22,.72,.14,.99) forwards }
+  @keyframes appear{
+    to{ opacity:1; transform:translateY(0) }
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <div class="header">
+    <div class="top-meta">
+      <div id="para">UN REGALO PARA: —</div>
+      <div id="de">DE: —</div>
+    </div>
+    <div class="title">
+      <span class="big">12 Razones</span>
+      <span class="script">por las que te amo</span>
+    </div>
+    <div class="subtitle" id="frase">Tú eres mi camino, y siempre vas a ser mi camino.</div>
+    <div class="slot"></div>
+  </div>
+
+  <div class="printer">
+    <div class="tickets-view" id="ticketsView"></div>
+    <div class="actions"><button class="btn" id="btnImprimir">🧾 Imprimir ticket</button></div>
+     <div class="info" id="status">Listo. Clic para imprimir el Ticket #1 de 12.</div>
+  </div>
+</div>
+
+<script>
+const CONFIG = {
+  para: "Lupita",
+  de: "Miguel",
+  fecha: "30.04.24",
+  iniciales: "L • M",
+  frase: "Tú eres mi camino, y siempre vas a ser mi camino.",
+  marca: "30/09/2025 — FELIZ MESARIO MI VIDA"
+};
+const RAZONES = [
+"Porque desde que llegaste a mi vida descubrí lo que significa la felicidad real.",
+"Porque en tu abrazo encontré el único lugar donde el mundo deja de existir y solo importamos tú y yo.",
+"Porque me miras como si yo fuera tu todo, y en esa mirada siento que no necesito nada más.",
+"Porque incluso en mis días más grises, eres mi rayo de luz y la razón por la que sonrío.",
+"Porque me amas tal como soy, con mis defectos, y haces que quiera ser mejor cada día para ti.",
+"Porque en cada beso tuyo siento que el tiempo se detiene y el universo conspira para unirnos.",
+"Porque conviertes lo cotidiano en mágico: comer, caminar, platicar, contigo son eternos.",
+"Porque eres mi confidente, mi refugio y mi mejor aventura al mismo tiempo.",
+"Porque tu voz es mi canción favorita, la melodía que calma mi alma y enciende mi corazón.",
+"Porque cuando estamos juntos el mundo tiene sentido, y cuando no, te llevo en cada pensamiento.",
+"Porque nuestro amor no se mide en días, meses o años, sino en momentos inolvidables que atesoro en el alma.",
+"Porque simplemente contigo entendí que el verdadero amor no se busca ni se encuentra: se reconoce, y yo te reconocí desde el primer instante. <br>Y aunque hoy solo escriba 12 razones, la verdad es que existen infinitas, tantas que no me alcanzaría la vida entera para escribirlas todas, porque cada día descubro una nueva razón para amarte."
+];
+
+const view = document.getElementById('ticketsView');
+document.getElementById('para').textContent = `UN REGALO PARA: ${CONFIG.para}`;
+document.getElementById('de').textContent   = `DE: ${CONFIG.de}`;
+document.getElementById('frase').textContent = CONFIG.frase;
+const statusEl = document.getElementById('status');
+
+let i = 0;
+function tplTicket(n,texto){
+  const no = String(n).padStart(2,'0');
+  const el = document.createElement('article');
+  el.className = 'ticket';
+  el.innerHTML = `
+    <div class="ticket-body">
+      <div class="mark">
+        <span>TICKET DE AMOR · N.º ${no} de 12</span>
+        <span>❤︎ ${CONFIG.iniciales} · ${CONFIG.fecha}</span>
+      </div>
+      <hr class="hr" />
+      <div class="reason-badge"><span class="num">${n}</span> RAZÓN</div>
+      <div class="reason-text">${texto}</div>
+      <div class="table">
+        <div>ITEM COUNT: </div><div>1 vida entera juntos</div>
+        <div>TOTAL: </div><div>$ amor infinito</div>
+        <div>PARA: </div><div>${CONFIG.para}</div>
+        <div>DE: </div><div>${CONFIG.de}</div>
+      </div>
+      <div class="barcode"></div>
+      <div class="foot">${CONFIG.marca}</div>
+    </div>`;
+  return el;
+}
+
+function imprimirPorClic(){
+  if(i >= RAZONES.length){
+    view.innerHTML = '';
+    i = 0;
+    statusEl.textContent = 'Reiniciado. Clic para imprimir el Ticket #1 de 12.';
+    return;
+  }
+
+  // ✅ Borra el ticket anterior
+  view.innerHTML = '';
+
+  // Inserta el nuevo
+  const ticket = tplTicket(i+1, RAZONES[i]);
+  view.appendChild(ticket);
+  void ticket.offsetWidth;
+  ticket.classList.add('printing');
+
+  i++;
+  statusEl.textContent = i < RAZONES.length
+    ? `Impreso el Ticket #${i}. Clic para imprimir el Ticket #${i+1} de 12.`
+    : `Impreso el Ticket #12. Clic de nuevo para reiniciar.`;
+}
+document.getElementById('btnImprimir').addEventListener('click', imprimirPorClic);
+</script>
+</body>
+</html>
