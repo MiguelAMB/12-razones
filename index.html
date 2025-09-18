@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>12 Razones para amarte ❤️</title>
+<title>Razones para amarte ❤️</title>
 <style>
   :root{
     --bg:#0e1a2b; --bg2:#06101d; --viewer-bg:#0b1320;
@@ -51,10 +51,15 @@
     overflow:visible;
   }
 
-  .actions{ display:flex; justify-content:center; margin-top:14px }
+  .actions{width: 300px; margin: 0 auto; justify-content:center; margin-top:14px }
   .btn{
     padding:10px 14px; border:none; border-radius:10px; font-weight:700;
     background:linear-gradient(180deg,var(--accent),#ff567f); color:#fff;
+    cursor:pointer; box-shadow:0 6px 16px rgba(255,105,145,.35);
+  }
+   .btn-regresar{
+    padding:10px 14px; border:none; border-radius:10px; font-weight:700;
+    background:linear-gradient(180deg,var(--accent),#da6a6af5); color:#fff;
     cursor:pointer; box-shadow:0 6px 16px rgba(255,105,145,.35);
   }
   .info{ text-align:center; margin-top:8px; font-size:.9rem; opacity:.9 }
@@ -87,7 +92,7 @@
   .hr{ border:0; height:1px; background:repeating-linear-gradient(90deg,#c8a3af 0 8px,#0000 8px 14px); margin:8px 0 12px }
   .reason-badge{ display:inline-flex; gap:8px; align-items:center; font-weight:800; padding:6px 10px; border-radius:999px;
                  background:linear-gradient(180deg,#ffd2df,#ffc1d3); border:2px dashed #ff7ea3 }
-  .reason-badge .num{ width:28px; height:28px; display:grid; place-items:center; border-radius:999px; color:#fff;
+  .reason-badge .num{ width:45px; height:28px; display:grid; place-items:center; border-radius:999px; color:#fff;
                       background:linear-gradient(180deg,#ff6f91,#ff4e7b) }
   .reason-text{ margin:12px 0; font-size:1.05rem; text-align: center; }
   .table{ display:grid; grid-template-columns:1fr auto; gap:6px 12px; font-size:.85rem;
@@ -110,7 +115,7 @@
       <div id="de">DE: —</div>
     </div>
     <div class="title">
-      <span class="big">12 Razones</span>
+      <span class="big">Razones</span>
       <span class="script">por las que te amo</span>
     </div>
     <div class="subtitle" id="frase">Tú eres mi camino, y siempre vas a ser mi camino.</div>
@@ -119,8 +124,10 @@
 
   <div class="printer">
     <div class="tickets-view" id="ticketsView"></div>
-    <div class="actions"><button class="btn" id="btnImprimir">🧾 Imprimir ticket</button></div>
-     <div class="info" id="status">Listo. Clic para imprimir el Ticket #1 de 12.</div>
+    <div class="actions">
+      <button class="btn-regresar" id="btnRegresar">🧾 Regresar ticket</button> 
+      <button class="btn" id="btnImprimir">🧾 Imprimir ticket</button></div>
+     <div class="info" id="status">Listo. Clic para imprimir el Ticket #1 de 112.</div>
   </div>
 </div>
 
@@ -135,16 +142,116 @@ const CONFIG = {
 };
 const RAZONES = [
 "Porque desde que llegaste a mi vida descubrí lo que significa la felicidad real.",
+"Tus ojos",
+"Tu cabello",
+"Tu sonrisa",
+"Tus labios",
+"Tu inteligencia",
+"Tu forma de ser",
+"La manera en la que piensas",
+"Tu risa",
+"Tu amabilidad",
+"Tus pestañas",
+"Tus hermosos cachetitos",
 "Porque en tu abrazo encontré el único lugar donde el mundo deja de existir y solo importamos tú y yo.",
 "Porque me miras como si yo fuera tu todo, y en esa mirada siento que no necesito nada más.",
 "Porque incluso en mis días más grises, eres mi rayo de luz y la razón por la que sonrío.",
+"Tu amor",
+"Tus abrazos",
+"Tus besos",
+"Tu honestidad",
+"Tu lealtad",
+"La forma en que me apoyas",
+"Tu voz",
+"Lo linda que te ves sin maquillarte",
+"Lo linda que eres con mi familia",
+"Tu comprensión",
+"Tu humildad",
+"Tu carácter",
+"Tu forma de amar a las personas",
+"Tu forma de mirarme",
+"La manera en la que me amas",
+"Cómo te vistes",
 "Porque me amas tal como soy, con mis defectos, y haces que quiera ser mejor cada día para ti.",
 "Porque en cada beso tuyo siento que el tiempo se detiene y el universo conspira para unirnos.",
 "Porque conviertes lo cotidiano en mágico: comer, caminar, platicar, contigo son eternos.",
+"Lo sensible que eres",
+"Tus corajes",
+"Tu sentido del humor",
+"Tu pasión por hacer las cosas",
+"Tu olor",
+"Tu sonrisa cada que me miras",
+"Tu compañía por ir conmigo",
+"Tu seguridad",
+"Tu interés",
+"Tus regaños",
+"Tus mordidas",
+"Tu amor por mi cabello",
+"Tu seguridad por lo que quieres",
+"Tus celos",
+"Tus caras",
+"Tu comedia",
+"Tu piel",
 "Porque eres mi confidente, mi refugio y mi mejor aventura al mismo tiempo.",
 "Porque tu voz es mi canción favorita, la melodía que calma mi alma y enciende mi corazón.",
+"Tu alegría",
+"Tu risa contagiosa",
+"Tu actuar",
+"Tu perspectiva de todo",
+"Tu amor por las fotos",
+"Tu amor por los animales",
+"Tu belleza",
+"Tu apoyo",
+"Tu sencillez",
+"Tu cuerpo",
+"Tu cariño",
+"Tus chistes malos",
+"Lo maravillosa que eres",
+"Lo asombrosa que eres",
+"Tu carisma",
+"Tu amistad",
+"Tu forma por ayudar a las personas",
+"Tus dones",
+"Tu fortaleza",
 "Porque cuando estamos juntos el mundo tiene sentido, y cuando no, te llevo en cada pensamiento.",
+"Tu belleza interna y exterior",
+"Tu delicadeza",
+"Tus decisiones",
+"Tu seriedad",
+"No me juzgas",
+"Tímida",
+"Atenta",
+"Tu manera de mejorar",
+"La manera en que me guías",
+"Tus cumplidos",
+"Tus promesas",
+"Detallista",
+"Fuerte",
+"Orgullosa",
+"Todo para mí",
 "Porque nuestro amor no se mide en días, meses o años, sino en momentos inolvidables que atesoro en el alma.",
+"Tus consejos",
+"Tus manualidades",
+"Tu energía por hacer las cosas",
+"Me conoce como nadie me había conocido",
+"Que actúas como mi segunda mamá",
+"Tus brazos",
+"Tu encanto",
+"Tu amor por las mascotas",
+"Lo fuerte que eres",
+"Tu enorme corazón",
+"Tu atención",
+"Tu compañía",
+"Tu amor",
+"Tu belleza",
+"Tu toque que le das a la vida",
+"Tu calma",
+"La forma en la que me hablas",
+"Tu nariz",
+"Tus brazos",
+"Tu manera de escuchar",
+"Tu cara",
+"Tus valores",
 "Porque simplemente contigo entendí que el verdadero amor no se busca ni se encuentra: se reconoce, y yo te reconocí desde el primer instante. <br>Y aunque hoy solo escriba 12 razones, la verdad es que existen infinitas, tantas que no me alcanzaría la vida entera para escribirlas todas, porque cada día descubro una nueva razón para amarte."
 ];
 
@@ -154,7 +261,7 @@ document.getElementById('de').textContent   = `DE: ${CONFIG.de}`;
 document.getElementById('frase').textContent = CONFIG.frase;
 const statusEl = document.getElementById('status');
 
-let i = 0;
+let i = -1;
 function tplTicket(n,texto){
   const no = String(n).padStart(2,'0');
   const el = document.createElement('article');
@@ -162,11 +269,11 @@ function tplTicket(n,texto){
   el.innerHTML = `
     <div class="ticket-body">
       <div class="mark">
-        <span>TICKET DE AMOR · N.º ${no} de 12</span>
+        <span>TICKET DE AMOR · N.º ${no} de 112</span>
         <span>❤︎ ${CONFIG.iniciales} · ${CONFIG.fecha}</span>
       </div>
       <hr class="hr" />
-      <div class="reason-badge"><span class="num">${n}</span> RAZÓN</div>
+      <div class="reason-badge">RAZÓN <span class="num">${n}</span></div>
       <div class="reason-text">${texto}</div>
       <div class="table">
         <div>ITEM COUNT: </div><div>1 vida entera juntos</div>
@@ -180,29 +287,37 @@ function tplTicket(n,texto){
   return el;
 }
 
-function imprimirPorClic(){
-  if(i >= RAZONES.length){
-    view.innerHTML = '';
-    i = 0;
-    statusEl.textContent = 'Reiniciado. Clic para imprimir el Ticket #1 de 12.';
-    return;
-  }
-
-  // ✅ Borra el ticket anterior
+function mostrarTicket() {
   view.innerHTML = '';
-
-  // Inserta el nuevo
-  const ticket = tplTicket(i+1, RAZONES[i]);
+  const ticket = tplTicket(i + 1, RAZONES[i]);
   view.appendChild(ticket);
   void ticket.offsetWidth;
   ticket.classList.add('printing');
-
-  i++;
-  statusEl.textContent = i < RAZONES.length
-    ? `Impreso el Ticket #${i}. Clic para imprimir el Ticket #${i+1} de 12.`
-    : `Impreso el Ticket #12. Clic de nuevo para reiniciar.`;
+  
+  statusEl.textContent = `Mostrando el Ticket #${i + 1} de ${RAZONES.length}.`;
 }
+
+function imprimirPorClic() {
+  if (i >= RAZONES.length - 1) {
+    i = 0; // Reinicia si estaba en el último
+  } else {
+    i++;
+  }
+  mostrarTicket();
+}
+
+function volverPorClic() {
+  if (i <= 0) {
+    statusEl.textContent = `Ya estás en el primer ticket amor o no has empezado a imprimir.`;
+    return;
+  }
+  
+  i--;
+  mostrarTicket();
+}
+
 document.getElementById('btnImprimir').addEventListener('click', imprimirPorClic);
+document.getElementById('btnRegresar').addEventListener('click', volverPorClic);
 </script>
 </body>
 </html>
